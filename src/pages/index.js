@@ -63,8 +63,6 @@ export async function getStaticProps() {
     const API_LESSONS = `${process.env.NEXT_PUBLIC_API_BACKEND}/lessons`;
     const responseLessons = await axios(API_LESSONS);
 
-    console.log('response', data);
-
     return {
       props: {
         settings: settingsProp,

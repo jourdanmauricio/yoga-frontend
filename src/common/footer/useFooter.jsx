@@ -88,14 +88,11 @@ const useFooter = () => {
 
     try {
       setAction('loading');
-      console.log('Submit');
       const API_URL = `${process.env.NEXT_PUBLIC_API_BACKEND}/subscribers`;
 
       const response = await axios.post(API_URL, suscribe);
       setFormMsg('Formulario enviado!. Pronto recibirás novedades.');
-      console.log('response', response);
     } catch (error) {
-      console.log('ERRORRRRR', error);
       setFormMsg('Error enviando el formulario');
     } finally {
       setAction('msg');

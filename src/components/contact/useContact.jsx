@@ -72,7 +72,6 @@ const useContact = () => {
     const fields = ['name', 'email', 'comment'];
     for (let field of fields) {
       if (contact[field] === '') {
-        console.log('FIELd', field);
         formError = true;
         fieldsErrors = {
           ...fieldsErrors,
@@ -91,14 +90,11 @@ const useContact = () => {
 
     try {
       setAction('loading');
-      console.log('Submit');
       const API_URL = `${process.env.NEXT_PUBLIC_API_BACKEND}/comments`;
 
       const response = await axios.post(API_URL, contact);
       setFormMsg('Formulario enviado!. En breve nos pondremos en contacto.');
-      console.log('response', response);
     } catch (error) {
-      console.log('ERRORRRRR', error);
       setFormMsg('Error enviando el formulario');
     } finally {
       setAction('msg');
