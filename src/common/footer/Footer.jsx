@@ -2,11 +2,11 @@ import Image from 'next/image';
 import Spinner from '../Spinner';
 import useFooter from './useFooter';
 
-const Footer = () => {
+const Footer = ({ contact, socialMedia }) => {
   const { action, error, formMsg, handleChange, handleSubmit } = useFooter();
 
   return (
-    <footer className="bg-slate-300">
+    <footer className="bg-backgroundFooterColor">
       <section className="w-full flex flex-col p-10 sm:flex-row sm:justify-evenly sm:gap-0 sm:h-[400px]">
         <div className="w-full flex justify-center items-center text-center sm:w-1/2">
           {action === 'form' && (
@@ -99,12 +99,13 @@ const Footer = () => {
           <div className="flex justify-center gap-12">
             <a
               id="footer-facebook"
+              href={socialMedia.facebook}
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer"
               className="no-underline"
             >
               <Image
-                src="/icons/facebook2.svg"
+                src="/icons/facebook.svg"
                 alt="Facebook"
                 className="footer__icon"
                 width={24}
@@ -113,8 +114,9 @@ const Footer = () => {
             </a>
             <a
               id="footer-twitter"
+              href={socialMedia.twitter}
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer"
               className="no-underline"
             >
               <Image
@@ -127,12 +129,13 @@ const Footer = () => {
             </a>
             <a
               id="footer-instagram"
+              href={socialMedia.instagram}
               target="_blank"
-              rel="nofollow"
+              rel="nofollow noreferrer"
               className="no-underline"
             >
               <Image
-                src="/icons/icon-instagram.svg"
+                src="/icons/instagram.svg"
                 alt="Instagram"
                 className="footer__icon"
                 width={24}
@@ -140,27 +143,37 @@ const Footer = () => {
               />
             </a>
           </div>
-          <div className="link__section">
-            <span id="address">Moreno 50</span>
-            <span id="phone">0262-14144141</span>
+          <div className="flex flex-col justify-evenly">
+            <span id="address">{contact.address}</span>
+            <span id="phone">{contact.phone}</span>
           </div>
           <div className="flex justify-center gap-12">
-            <a id="footer-email" className="footer__media">
+            <a
+              id="footer-email"
+              href={`mailto: ${contact.email}`}
+              className="footer__media"
+            >
               <Image
                 src="/icons/email.svg"
                 alt="Email"
                 className="footer__icon"
-                rel="”nofollow”"
+                rel="nofollow"
                 width={24}
                 height={24}
               />
             </a>
-            <a id="footer-whatsapp" className="footer__media" target="_blank">
+            <a
+              id="footer-whatsapp"
+              href={contact.whatsapp}
+              className="footer__media"
+              target="_blank"
+              rel="nofollow noreferrer"
+            >
               <Image
-                src="/icons/whatsapp2.svg"
-                alt="Facebook"
+                src="/icons/whatsapp.svg"
+                alt="Perfil de Whatsapp"
                 className="footer__icon"
-                rel="”nofollow”"
+                rel="nofollow"
                 width={24}
                 height={24}
               />

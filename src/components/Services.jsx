@@ -31,7 +31,7 @@ const Services = () => {
                   height={250}
                 />
 
-                <figcaption className="w-0 h-full absolute bottom-0 left-0 right-0 bg-pink-500 overflow-hidden ease-in-out duration-500 rounded group-hover:w-full group-hover:opacity-80">
+                <figcaption className="w-0 h-full absolute bottom-0 left-0 right-0 bg-effectColor overflow-hidden ease-in-out duration-500 rounded group-hover:w-full group-hover:opacity-80">
                   <p className="absolute top-1/2 left-1/2 whitespace-nowrap	text-slate-200 text-lg -translate-x-1/2 -translate-y-1/2 border-t border-b border-solid border-slate-200">
                     Hatha Yoga
                   </p>
@@ -48,7 +48,7 @@ const Services = () => {
                   width={250}
                   height={250}
                 />
-                <figcaption className="w-0 h-full absolute bottom-0 left-0 right-0 bg-pink-500 overflow-hidden ease-in-out duration-500 rounded group-hover:w-full group-hover:opacity-80">
+                <figcaption className="w-0 h-full absolute bottom-0 left-0 right-0 bg-effectColor overflow-hidden ease-in-out duration-500 rounded group-hover:w-full group-hover:opacity-80">
                   <p className="absolute top-1/2 left-1/2 whitespace-nowrap	text-slate-200 text-lg -translate-x-1/2 -translate-y-1/2 border-t border-b border-solid border-slate-200">
                     Terapia Shiatsu
                   </p>
@@ -65,7 +65,7 @@ const Services = () => {
                   width={250}
                   height={250}
                 />
-                <figcaption className="w-0 h-full absolute bottom-0 left-0 right-0 bg-pink-500 overflow-hidden ease-in-out duration-500 rounded group-hover:w-full group-hover:opacity-80">
+                <figcaption className="w-0 h-full absolute bottom-0 left-0 right-0 bg-effectColor overflow-hidden ease-in-out duration-500 rounded group-hover:w-full group-hover:opacity-80">
                   <p className="absolute top-1/2 left-1/2 whitespace-nowrap	text-slate-200 text-lg -translate-x-1/2 -translate-y-1/2 border-t border-b border-solid border-slate-200">
                     Clases online
                   </p>

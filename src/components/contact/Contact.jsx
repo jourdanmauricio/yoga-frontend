@@ -37,7 +37,7 @@ const Contact = () => {
                     type="text"
                     className={`form__input ${
                       error.name
-                        ? 'focus:border-red-500'
+                        ? 'focus:border-errorColor'
                         : 'focus:border-teal-700'
                     }`}
                     name="name"
@@ -64,7 +64,7 @@ const Contact = () => {
                     type="email"
                     className={`form__input ${
                       error.email
-                        ? 'focus:border-red-500'
+                        ? 'focus:border-errorColor'
                         : 'focus:border-teal-700'
                     }`}
                     name="email"
@@ -90,7 +90,7 @@ const Contact = () => {
                     type="text"
                     className={`form__input ${
                       error.phone
-                        ? 'focus:border-red-500'
+                        ? 'focus:border-errorColor'
                         : 'focus:border-teal-700'
                     }`}
                     name="phone"
@@ -115,7 +115,7 @@ const Contact = () => {
                   <textarea
                     className={`form__input ${
                       error.comment
-                        ? 'focus:border-red-500'
+                        ? 'focus:border-errorColor'
                         : 'focus:border-teal-700'
                     }`}
                     name="comment"

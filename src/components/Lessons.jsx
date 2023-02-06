@@ -1,4 +1,4 @@
-const Lessons = () => {
+const Lessons = ({ lessons }) => {
   return (
     <section className="p-10" id="lessons" data-scroll-spy>
       <div className="divider__content">
@@ -13,16 +13,21 @@ const Lessons = () => {
         className="border-spacing-1 border-collapse bg-pink-500 rounded overflow-hidden max-w-[800px] w-full mx-auto relative shadow-[0_0_10px_rgba(0,0,0,0.25)]"
       >
         <thead>
-          <tr className="pl-2 h-14 bg-pink-500 text-base text-slate-200 border-b border-solid border-gray-500">
+          <tr className="pl-2 h-14 bg-tableHeaderColor text-base text-tableHeaderTextColor border-b border-solid border-tableBorderColor">
             <th className="pl-2 text-center">Días</th>
             <th className="pl-2 text-center">Horario</th>
           </tr>
         </thead>
         <tbody>
-          <tr className="h-12 border-b border-solid border-gray-500">
-            <td className="text-center">H</td>
-            <td className="text-center">H</td>
-          </tr>
+          {lessons.map((lesson) => (
+            <tr
+              key={lesson.id}
+              className="h-12 border-b border-solid border-tableBorderColor bg-tableBodyColor text-tableBodyTextColor"
+            >
+              <td className="text-center">{lesson.days}</td>
+              <td className="text-center">{lesson.hours}</td>
+            </tr>
+          ))}
         </tbody>
       </table>
     </section>
@@ -30,7 +35,3 @@ const Lessons = () => {
 };
 
 export default Lessons;
-
-// tbody tr:last-child {
-//   border: 0;
-// }

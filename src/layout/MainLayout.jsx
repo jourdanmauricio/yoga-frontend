@@ -1,6 +1,6 @@
 import Hero from '@/components/Hero';
 import Nav from '@/common/Nav';
-import Footer from '../common/footer/Footer';
+// import Footer from '../common/footer/Footer';
 
 const MainLayout = ({ children }) => {
   return (
@@ -13,7 +13,7 @@ const MainLayout = ({ children }) => {
           {children}
           {/* </div> */}
         </main>
-        <Footer />
+        {/* <Footer /> */}
       </div>
     </>
   );

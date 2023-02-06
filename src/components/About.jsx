@@ -25,7 +25,7 @@ const About = () => {
         </p>
         <a
           href="#"
-          className="inline-block mt-10 text-lg text-pink-500 border-b border-pink-500 ease-in-out duration-500 hover:tracking-widest hover:border-b"
+          className="inline-block mt-10 text-lg text-buttonColor border-b border-buttonColor ease-in-out duration-500 hover:tracking-widest hover:border-b"
         >
           <p>Descubre nuestras clases</p>
         </a>

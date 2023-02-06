@@ -2,6 +2,10 @@
 @tailwind components;
 @tailwind utilities;
 
+:root {
+  --gray-very-ligth: '#e2e8f0';
+}
+
 * {
   box-sizing: border-box;
   padding: 0;
@@ -13,9 +17,14 @@ body {
   max-width: 1400px;
   margin: auto;
   scroll-behavior: smooth;
+  font-family: var(--raleway-font);
+  background-color: var(--background-color);
+}
 
-  /* overflow-x: hidden; */
-  /* overflow-y: hidden; */
+h1,
+h2,
+h3 {
+  font-family: var(--quicksand-font);
 }
 
 a {
@@ -49,7 +58,6 @@ a {
   height: 100%;
   backface-visibility: hidden;
   border-radius: 50%;
-  /* overflow: hidden; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -88,17 +96,18 @@ a {
   }
   /*   TITLE   */
   .title {
-    @apply text-2xl text-center text-gray-800 mt-6 font-semibold;
+    @apply text-2xl text-center mt-6 font-semibold text-titleColor;
+    /* text-gray-800 */
   }
 
   /*   PARAGRAPH   */
   .paragraph {
-    @apply text-center text-gray-800 leading-6 font-normal mt-6 mb-5 text-xl;
+    @apply text-center leading-6 font-normal mt-6 mb-5 text-xl text-paragraphColor;
   }
 
   /*   BUTTON   */
   .button__cta {
-    @apply block my-8 mx-auto w-[280px] rounded bg-pink-500 text-slate-200 px-[5px] py-2 uppercase text-lg border-2 border-solid border-transparent ease-in-out duration-300 no-underline hover:bg-transparent hover:border-pink-500 hover:text-pink-500;
+    @apply block my-8 mx-auto w-[280px] rounded bg-buttonColor text-slate-200 px-[5px] py-2 uppercase text-lg border-2 border-solid border-transparent ease-in-out duration-300 no-underline hover:bg-transparent hover:border-buttonColor hover:text-buttonColor;
   }
 
   /*   FORM   */
@@ -107,10 +116,10 @@ a {
   }
 
   .form__icon {
-    @apply absolute left-[5px] text-red-500;
+    @apply absolute left-[5px] text-red-700;
   }
   .form__error {
-    @apply absolute text-left w-11/12 rounded text-sm text-red-500 block transition-opacity duration-1000 ease-in-out;
+    @apply absolute text-left w-11/12 rounded text-sm text-errorColor block transition-opacity duration-1000 ease-in-out;
   }
 
   .form__input {
