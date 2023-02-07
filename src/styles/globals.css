@@ -125,4 +125,38 @@ a {
   .form__input {
     @apply w-full py-1 px-4 font-normal border border-solid border-gray-800 rounded bg-transparent  text-black focus:outline-none;
   }
+
+  .menu {
+    @apply flex justify-between sm:block sticky min-h-[45px] top-0 z-50 items-center bg-slate-200 shadow-[0_4px_9px_0px_rgba(41,41,41,0.25)] px-6 py-0;
+  }
+
+  .menu__icon {
+    @apply sm:hidden hover:cursor-pointer;
+  }
+
+  .menu__desktop {
+    @apply flex justify-between items-center;
+  }
+
+  .menu__ul {
+    @apply list-none p-0 m-0 hidden sm:flex items-center h-[50px] ml-3;
+  }
+  .menu__link {
+    @apply ml-2 no-underline text-buttonColor border-b border-solid hover:border-buttonColor;
+  }
+  .menu__item {
+    @apply block px-2 py-1;
+  }
+  .menu__mobile {
+    @apply absolute top-[45px] left-0 w-[50%] bg-slate-200 -z-10;
+  }
+  .menu__ul-mobile {
+    @apply min-h-screen justify-between px-0 list-none;
+  }
+  .menu__link-mobile {
+    @apply hover:bg-gray-600 transition duration-300 ease-in-out;
+  }
+  .menu__mobile-item {
+    @apply no-underline text-black font-normal px-6 py-6 block;
+  }
 }

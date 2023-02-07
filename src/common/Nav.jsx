@@ -19,7 +19,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="flex justify-between sm:block sticky min-h-[45px] top-0 z-50 items-center bg-slate-200 shadow-[0_4px_9px_0px_rgba(41,41,41,0.25)] px-6 py-0">
+    <nav className="menu">
       <Image
         ref={btnMenuRef}
         onClick={() => setIsOpenMenu((prev) => !prev)}
@@ -27,87 +27,63 @@ const Nav = () => {
         height={25}
         src="/icons/icon_menu.svg"
         alt="Menu Icon"
-        className="sm:hidden hover:cursor-pointer"
+        className="menu__icon"
       />
-      <div className="flex justify-between items-center">
+      <div className="menu__desktop">
         <Image width={180} height={45} src="/images/logo2.svg" alt="logo" />
-        <ul className="list-none p-0 m-0 hidden sm:flex items-center h-[50px] ml-3">
+        <ul className="menu__ul">
           <li
-            className={`ml-2 no-underline text-pink-600 border border-solid hover:border-pink-600 rounded-[8px] ${
+            className={`menu__link ${
               router.asPath == '/#inicio'
-                ? 'border-pink-600'
+                ? 'border-buttonColor'
                 : 'border-slate-200'
             }`}
           >
-            <Link
-              className="block px-2 py-1"
-              href="#inicio"
-              scroll={false}
-              data-scroll-spy
-            >
+            <Link className="menu__item" href="#inicio" scroll={false}>
               Inicio
             </Link>
           </li>
           <li
-            className={`ml-2 no-underline text-pink-600 border border-solid hover:border-pink-600 rounded-[8px] ${
+            className={`menu__link ${
               router.asPath == '/#servicios'
-                ? 'border-pink-600'
+                ? 'border-buttonColor'
                 : 'border-slate-200'
             }`}
           >
-            <Link
-              className="block px-2 py-1"
-              href="#servicios"
-              scroll={false}
-              data-scroll-spy
-            >
+            <Link className="menu__item" href="#servicios" scroll={false}>
               Servicios
             </Link>
           </li>
           <li
-            className={`ml-2 no-underline text-pink-600 border border-solid hover:border-pink-600 rounded-[8px] ${
+            className={`menu__link ${
               router.asPath == '/#lessons'
-                ? 'border-pink-600'
+                ? 'border-buttonColor'
                 : 'border-slate-200'
             }`}
           >
-            <Link
-              className="block px-2 py-1"
-              href="#lessons"
-              scroll={false}
-              data-scroll-spy
-            >
+            <Link className="menu__item" href="#lessons" scroll={false}>
               Horarios
             </Link>
           </li>
           <li
-            className={`ml-2 no-underline text-pink-600 border border-solid hover:border-pink-600 rounded-[8px] ${
+            className={`menu__link ${
               router.asPath == '/#contact'
-                ? 'border-pink-600'
+                ? 'border-buttonColor'
                 : 'border-slate-200'
             }`}
           >
-            <Link
-              className="block px-2 py-1"
-              href="#contact"
-              scroll={false}
-              data-scroll-spy
-            >
+            <Link className="menu__item" href="#contact" scroll={false}>
               Contacto
             </Link>
           </li>
         </ul>
       </div>
 
-      <div
-        className={`absolute top-[45px] left-0 w-[50%] bg-slate-200 -z-10 ${
-          isOpenMenu ? 'block' : 'hidden'
-        }`}
-      >
-        <ul className="min-h-screen justify-between px-0 list-none">
-          <li className="hover:bg-gray-600 transition duration-300 ease-in-out">
+      <div className={`menu__mobile ${isOpenMenu ? 'block' : 'hidden'}`}>
+        <ul className="menu__ul-mobile">
+          <li className="menu__link-mobile">
             <Link
-              className="no-underline text-black font-normal px-6 py-6 block"
+              className="menu__mobile-item"
               href="/#inicio"
               scroll={false}
               data-scroll-spy
@@ -115,9 +91,9 @@ const Nav = () => {
               Inicio
             </Link>
           </li>
-          <li className="hover:bg-gray-600 transition duration-300 ease-in-out">
+          <li className="menu__link-mobile">
             <Link
-              className="no-underline text-black font-normal px-6 py-6 block"
+              className="menu__mobile-item"
               href="/#servicios"
               scroll={false}
               data-scroll-spy
@@ -125,9 +101,9 @@ const Nav = () => {
               Servicios
             </Link>
           </li>
-          <li className="hover:bg-gray-600 transition duration-300 ease-in-out">
+          <li className="menu__link-mobile">
             <Link
-              className="no-underline text-black font-normal px-6 py-6 block"
+              className="menu__mobile-item"
               href="/#lessons"
               scroll={false}
               data-scroll-spy
@@ -135,9 +111,9 @@ const Nav = () => {
               Horarios
             </Link>
           </li>
-          <li className="hover:bg-gray-600 transition duration-300 ease-in-out">
+          <li className="menu__link-mobile">
             <Link
-              className="no-underline text-black font-normal px-6 py-6 block"
+              className="menu__mobile-item"
               href="/#contact"
               scroll={false}
               data-scroll-spy
