@@ -25,14 +25,13 @@ const About = () => {
           mental y emocionalmente, para luego transmitir, difundir y mejorar con
           estas técnicas la calidad de vida de las personas.
         </p>
-        <a
-          href="#"
+        <Link
+          href="/#lessons"
+          scroll={false}
           className="inline-block mt-10 text-lg text-buttonColor border-b border-buttonColor ease-in-out duration-500 hover:tracking-widest hover:border-b"
         >
-          <Link href="/#lessons" scroll={false}>
-            Descubre nuestras clases
-          </Link>
-        </a>
+          Descubre nuestras clases
+        </Link>
       </div>
     </section>
   );
