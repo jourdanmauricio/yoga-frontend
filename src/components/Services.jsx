@@ -9,10 +9,10 @@ const Services = () => {
           <div className="divider__content">
             <p className="divider__text">Servicios</p>
           </div>
-          <p className="paragraph">
+          <h2 className="title">
             El yoga produce grandes beneficios a aquellos que lo practican con
-            tenacidad y de forma regular.
-          </p>
+            tenacidad y de forma regular
+          </h2>
           <p className="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             quisquam officia maxime voluptatem ipsa tempora expedita soluta
@@ -74,7 +74,7 @@ const Services = () => {
             </article>
           </div>
 
-          <Link href="/#contact" className="button__cta">
+          <Link href="/#contact" className="button__cta" scroll={false}>
             Más información
           </Link>
         </div>

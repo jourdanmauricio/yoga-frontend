@@ -1,3 +1,5 @@
+import Link from 'next/link';
+
 const About = () => {
   return (
     <section className="p-10 text-center" id="nosotros">
@@ -6,7 +8,7 @@ const About = () => {
       </div>
       <div>
         <h2 className="title">
-          El yoga es la oportunidad perfecta para ser curioso sobre quién eres.
+          El yoga es la oportunidad perfecta para ser curioso sobre quién eres
         </h2>
 
         <p className="paragraph">
@@ -27,7 +29,9 @@ const About = () => {
           href="#"
           className="inline-block mt-10 text-lg text-buttonColor border-b border-buttonColor ease-in-out duration-500 hover:tracking-widest hover:border-b"
         >
-          <p>Descubre nuestras clases</p>
+          <Link href="/#lessons" scroll={false}>
+            Descubre nuestras clases
+          </Link>
         </a>
       </div>
     </section>
