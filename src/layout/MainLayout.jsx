@@ -32,7 +32,7 @@ const MainLayout = ({ children }) => {
           />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="563" />
-          <meta property="og:image:heght" content="350" />
+          <meta property="og:image:height" content="350" />
           <meta property="og:image:alt" content="Posturas de yoga" />
 
           {/* twitter */}
