@@ -28,7 +28,7 @@ const MainLayout = ({ children }) => {
           />
           <meta
             property="og:image"
-            content="https://hathayogaloberia.com.ar/galeria2.jpeg"
+            content="https://hathayogaloberia.com.ar/images/galeria/galeria2.jpeg"
           />
           <meta property="og:image:type" content="image/jpeg" />
           <meta property="og:image:width" content="563" />
