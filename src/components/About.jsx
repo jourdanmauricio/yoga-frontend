@@ -2,29 +2,23 @@ import Link from 'next/link';
 
 const About = () => {
   return (
-    <section className="p-10 text-center" id="nosotros">
+    <section className="py-10 px-5 lg:px-20 text-center" id="nosotros">
       <div className="divider__content">
-        <p className="divider__text">¿Quienes somos?</p>
+        <p className="divider__text">Sobre mi</p>
       </div>
       <div>
-        <h2 className="title">
-          El yoga es la oportunidad perfecta para ser curioso sobre quién eres
-        </h2>
-
+        <h2 className="title">El equilibrio está en tu interior</h2>
         <p className="paragraph">
-          Hatha Yoga Lobería es un lugar para empezar, desarrollar o fortalecer
-          una práctica de yoga y meditación. Nos gustaría compartir contigo la
-          experiencia de yoga y ayudarte en aprender como utilizar la
-          experiencia de tu vida diaria para un crecimiento espiritual.
+          <strong>Hatha Yoga Lobería</strong> es un espacio para comenzar,
+          desarrollar y/o fortalecer la práctica del yoga.
         </p>
         <p className="paragraph">
-          Logramos impregnar los valores de respeto y cuidado del cuerpo en sus
-          alumnos y guiarlos en un descubrir cada vez mas conciente de éste. Los
-          practicantes aprenden a escuchar y manejar su cuerpo con vivencias y
-          de esta forma convertirse en buenos profesionales, íntegros física,
-          mental y emocionalmente, para luego transmitir, difundir y mejorar con
-          estas técnicas la calidad de vida de las personas.
+          Me gustaría compartir contigo mi experiencia y práctica del Hatha Yoga
+          y ayudarte a instrumentalizar los eventos y situaciones de la vida
+          cotidiana para profundizar tu crecimiento interior y conquistar una
+          actitud mental de lucidez, firmeza de mente y atención consciente.
         </p>
+        <p className="title mt-20">El yoga es una actitud de vida</p>
         <Link
           href="/#lessons"
           scroll={false}

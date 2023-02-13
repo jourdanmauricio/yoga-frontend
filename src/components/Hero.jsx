@@ -1,17 +1,16 @@
 const Hero = () => {
   return (
     <section
-      className="bg-[url('/images/hero.jpg')] min-h-[50vh] bg-cover bg-center bg-no-repeat"
       id="inicio"
-      data-scroll-spy
+      className="relative w-full min-h-[100vh] 2xl:min-h-[70vh] flex justify-center lg:justify-end content-none top-0 left-0 bg-[url('/images/hero.jpg')] bg-no-repeat bg-cover bg-[35%] lg:bg-left-bottom brightness-[90%]"
     >
-      <div className="p-5 min-h-[50vh] bg-black opacity-40 flex flex-col items-center justify-center text-center ">
-        <h1 className="text-4xl sm:text-5xl lg:text-6xl font-semibold text-h1Color">
-          Hatha Yoga Loberia
+      <div className="relative text-white text-center m-20 lg:mt-40">
+        <h1 className="text-4xl sm:text-5xl xl:text-[50px] font-medium mb-0">
+          Hatha Yoga Lobería
         </h1>
-        <p className="text-paragraphHeaderColor pt-4 text-2xl font-normal">
-          El equilibrio está en tu interior!
-        </p>
+        <h2 className="text-2xl sm:text-3xl mt-8 lg:mt-16">
+          Calma en el alma...
+        </h2>
       </div>
     </section>
   );

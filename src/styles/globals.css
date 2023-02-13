@@ -102,7 +102,7 @@ a {
 
   /*   PARAGRAPH   */
   .paragraph {
-    @apply text-center leading-6 font-normal mt-6 mb-5 text-xl text-paragraphColor;
+    @apply text-center leading-8 font-normal mt-6 mb-5 text-xl text-paragraphColor;
   }
 
   /*   BUTTON   */

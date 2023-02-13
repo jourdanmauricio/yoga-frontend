@@ -4,7 +4,7 @@ import Link from 'next/link';
 const Services = () => {
   return (
     <section className="text-center" id="servicios" data-scroll-spy>
-      <article className="p-10">
+      <article className="py-10 px-5 lg:px-20">
         <div>
           <div className="divider__content">
             <p className="divider__text">Servicios</p>
@@ -88,7 +88,7 @@ const Services = () => {
           <figcaption className="pl-10 text-left">&mdash; Max Strom</figcaption>
         </div>
       </figure>
-      <article className="p-10 mb-20 flex flex-col sm:flex-row items-center justify-center text-center gap-10">
+      <article className="py-10 px-5 lg:px-20 mb-20 flex flex-col sm:flex-row items-center justify-center text-center gap-10">
         <article>
           <figure className="min-h-[280px]">
             <Image
@@ -134,7 +134,7 @@ const Services = () => {
           </figure>
         </article>
       </article>
-      <article className="mb-14 w-full flex flex-col md:flex-row justify-center items-center ">
+      <article className="mb-14 w-full flex flex-col lg:flex-row justify-center items-center ">
         <Image
           src="/images/galeria/galeria1.jpeg"
           alt=""
@@ -158,8 +158,8 @@ const Services = () => {
         />
       </article>
 
-      <article className="flex flex-wrap justify-center items-center mb-10">
-        <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full md:basis-1/2 gap-4 items-center justify-center p-5">
+      <article className="py-10 px-5 lg:px-20 flex flex-wrap justify-center items-center mb-10">
+        <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full lg:basis-1/2 gap-4 items-center justify-center p-5">
           <div className="card">
             <div className="face front">
               <Image
@@ -187,7 +187,7 @@ const Services = () => {
           </p>
         </article>
 
-        <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full md:basis-1/2 gap-4 items-center justify-center p-5">
+        <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full lg:basis-1/2 gap-4 items-center justify-center p-5">
           <Image
             src="/images/conceptos/hatha-yoga.jpg"
             alt=""
@@ -198,8 +198,8 @@ const Services = () => {
         </article>
       </article>
 
-      <article className="flex flex-wrap items-center justify-center flex-row-reverse">
-        <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full md:basis-1/2 gap-4 items-center justify-center p-5">
+      <article className="py-10 px-5 lg:px-20 flex flex-wrap items-center justify-center flex-row-reverse">
+        <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full lg:basis-1/2 gap-4 items-center justify-center p-5">
           <div className="card">
             <div className="face front">
               <Image

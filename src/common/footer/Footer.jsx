@@ -6,7 +6,7 @@ const Footer = ({ contact, socialMedia }) => {
   const { action, error, formMsg, handleChange, handleSubmit } = useFooter();
 
   return (
-    <footer className="bg-backgroundFooterColor">
+    <footer className="py-10 px-5 lg:px-20 bg-backgroundFooterColor">
       <section className="w-full flex flex-col p-10 sm:flex-row sm:justify-evenly sm:gap-0 sm:h-[400px]">
         <div className="w-full flex justify-center items-center text-center sm:w-1/2">
           {action === 'form' && (
@@ -67,7 +67,7 @@ const Footer = ({ contact, socialMedia }) => {
               </div>
 
               <input
-                className="button__cta mt-8"
+                className="button__cta w-[250px] mt-8"
                 value="Suscribete"
                 type="submit"
               />

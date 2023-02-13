@@ -5,7 +5,7 @@ const Contact = () => {
   const { action, error, formMsg, handleChange, handleSubmit } = useContact();
   return (
     <section
-      className="text-center bg-[url('/images/contact.jpg')] bg-cover bg-center bg-no-repeat"
+      className="py-10 px-5 lg:px-20 text-center bg-[url('/images/contact.jpg')] bg-cover bg-center bg-no-repeat"
       id="contact"
       data-scroll-spy
     >

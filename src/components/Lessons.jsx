@@ -1,6 +1,6 @@
 const Lessons = ({ lessons }) => {
   return (
-    <section className="p-10" id="lessons" data-scroll-spy>
+    <section className="py-10 px-5 lg:px-20" id="lessons" data-scroll-spy>
       <div className="divider__content">
         <p className="divider__text">Horarios</p>
       </div>
