@@ -24,7 +24,7 @@ const About = () => {
           scroll={false}
           className="inline-block mt-10 text-lg text-buttonColor border-b border-buttonColor ease-in-out duration-500 hover:tracking-widest hover:border-b"
         >
-          Descubre nuestras clases
+          Descubre mis clases
         </Link>
       </div>
     </section>

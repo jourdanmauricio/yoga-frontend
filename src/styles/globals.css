@@ -92,17 +92,17 @@ a {
     @apply flex items-center gap-4 my-5 uppercase text-gray-800 font-semibold before:content-[''] before:h-0.5 before:bg-gray-800 before:grow after:content-[''] after:h-0.5 after:bg-gray-800 after:grow;
   }
   .divider__text {
-    @apply bg-transparent px-0 py-4 rounded;
+    @apply bg-transparent px-0 py-4 rounded font-secondary;
   }
   /*   TITLE   */
   .title {
-    @apply text-2xl text-center mt-6 font-semibold text-titleColor;
+    @apply font-primary text-2xl text-center mt-6 font-semibold text-titleColor;
     /* text-gray-800 */
   }
 
   /*   PARAGRAPH   */
   .paragraph {
-    @apply text-center leading-8 font-normal mt-6 mb-5 text-xl text-paragraphColor;
+    @apply text-center leading-8 font-normal mt-6 mb-5 text-xl text-paragraphColor font-secondary;
   }
 
   /*   BUTTON   */

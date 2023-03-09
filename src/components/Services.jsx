@@ -79,11 +79,15 @@ const Services = () => {
           </Link>
         </div>
       </article>
-      <figure className="h-[250px] bg-[url('/images/separador.jpg')] bg-cover bg-center bg-no-repeat bg-fixed mb-15 text-slate-200">
-        <div className="separador__container container">
-          <blockquote className="h-full w-full py-10 flex items-center justify-center text-2xl">
-            No importa lo profundo que llegues en una postura, lo que importa es
-            quién eres cuando llegas allí.
+      <figure className="relative h-[250px] bg-[url('/images/paralax-postura-opt.webp')] bg-cover bg-center bg-no-repeat bg-fixed mb-15">
+        <div className="absolute h-full w-full top-0 bg-black opacity-40"></div>
+
+        <div className="absolute separador__container container text-white font-primary">
+          <blockquote className="h-full w-full p-10 flex items-center justify-center text-2xl md:text-4xl">
+            <p>
+              No importa lo profundo que llegues en una postura, lo que importa
+              es quién eres cuando llegas allí.
+            </p>
           </blockquote>
           <figcaption className="pl-10 text-left">&mdash; Max Strom</figcaption>
         </div>

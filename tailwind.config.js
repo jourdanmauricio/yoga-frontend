@@ -15,6 +15,8 @@ module.exports = {
       fontFamily: {
         raleway: ['var(--raleway-font)', ...fontFamily.sans],
         quicksand: ['var(--quicksand-font)', ...fontFamily.sans],
+        primary: ['var(--primary-font)', ...fontFamily.sans],
+        secondary: ['var(--secondary-font)', ...fontFamily.sans],
       },
       colors: {
         completed: '#83B919',
