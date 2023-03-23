@@ -104,12 +104,12 @@ const Services = () => {
             />
             <figcaption>
               <p className="paragraph">
-                El yoga es uno de los entrenamientos más completos que podemos
-                encontrar para fortalecer todo nuestro cuerpo: a través de las
-                diferentes posturas o asanas trabajamos todos los grupos
-                musculares con nuestro propio peso corporal, ya sea manteniendo
-                las posturas durante un determinado período de tiempo o
-                añadiendo dinamismo a través del movimiento.
+                El yoga es el único método para el desarrollo físico, mental y
+                espiritual del hombre. Nació en la India hace Miles de años . No
+                es una religión , ni un credo confesional y no tiene templos,
+                ceremonias ni dogmas. Constituye un método integral de
+                evolución, que empieza con el perfeccionamiento del cuerpo
+                humano y prosigue con el progreso espiritual.
               </p>
             </figcaption>
           </figure>
@@ -126,13 +126,12 @@ const Services = () => {
             />
             <figcaption>
               <p className="paragraph">
-                Mediante posturas, la meditación y la respiración, entre otras
-                cosas, el yoga consigue relajarte logrando cambios profundos en
-                nuestra salud. Su importancia es tal que ha sido utilizado como
-                medicina preventiva y rehabilitadora. ¿Tú también practicas
-                yoga? Gracias a él logramos un bienestar, una paz interior, que
-                junto con una alimentación adecuada nos lleva a vivir la vida de
-                una forma mejor.
+                El Hatha Yoga juega un destacado papel tanto en el campo de la
+                salud corporal cómo mental. Mediante las asanas, las técnicas de
+                estiramiento, de control de la respiración y de relajación, se
+                pueden prevenir y/o calmar enfermedades respiratorias,
+                circulatorias y diversos desórdenes psicofisicos. El
+                ansiolíticos y sus técnicas sedan el sistema nervioso autónomo.
               </p>
             </figcaption>
           </figure>
@@ -181,13 +180,15 @@ const Services = () => {
 
           <h2 className="title">Hatha Yoga</h2>
           <p className="paragraph w-full">
-            Así se llama la expresión primera del yoga, del yoga más antiguo y
-            más esencial. El Hatha Yoga es una disciplina que aspira a llegar al
-            equilibrio (físico y mental) a través de asanas (posturas) y
-            pranayama (el conjunto de técnicas de respiración que llevan al
-            control de la energía vital). ‘Del Hatha Yoga parten todos los
-            demás. Hatha significa sol (ha) y luna (tha). Por eso representa el
-            equilibrio‘
+            El yoga psicofisicos (Hatha Yoga) es el sistema más perfecto de
+            acción armonizante sobre el cuerpo, sus funciones y energías.
+            Dispone de un gran número de técnicas de purificación física y
+            energética, donde juega un papel muy importante la atención
+            consciente. Estás técnicas que se aplican sobre el cuerpo son : las
+            asanas o posiciones físicas; el pranayama, o técnica de control
+            respiratorio; los mudras y bandhas, o técnica de aprovechamiento de
+            la energía y por último los shatkarmas o prácticas de limpieza
+            corporal.
           </p>
         </article>
 
@@ -221,12 +222,17 @@ const Services = () => {
 
           <h2 className="title">Shiatsu</h2>
           <p className="paragraph">
-            El Shiatsu es una terapia manual, o un masaje terapeútico, de origen
-            japonés que busca armonizar cuerpo, mente y emociones mediante el
-            contacto, con el objetivo de mejorar la salud y la vitalidad de la
-            persona que lo recibe.
+            El Shiatzu es un método de trabajo corporal cuyo núcleo es una
+            creencia de que todo lo que existe es una manifestación de energía.
+            Esta energía llamada Ki, necesita fluir por el cuerpo humano sin
+            problemas para que esté mantenga una salud óptima y prevenga
+            enfermedades. Mediante la presión con los dedos, palmas o a veces
+            antebrazos, codos o rodillas se estimula esa energía sobre
+            determinados meridianos para su libre fluir. Sus efectos son
+            increíblemente transformadores.
           </p>
         </article>
+
         <article className="flex flex-wrap flex-col grow-0 shrink-0 basis-full md:basis-1/2 gap-4 items-center justify-center p-5">
           <Image
             src="/images/conceptos/shiatsu.jpg"
@@ -237,6 +243,15 @@ const Services = () => {
           />
         </article>
       </article>
+
+      <h2 className="title px-10">
+        Nuestra mente es como un lago. Cuando está agitado y movido no puede
+        reflejar el cielo. Solo cuando está perfectamente tranquilo y en calma
+        deja que en él se mire el firmamento.
+      </h2>
+      <h3 className="title px-10">
+        Si todavía no lo experimentaste, animate 🙏
+      </h3>
     </section>
   );
 };
