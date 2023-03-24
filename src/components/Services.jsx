@@ -13,14 +13,14 @@ const Services = () => {
             El yoga produce grandes beneficios a aquellos que lo practican con
             tenacidad y de forma regular
           </h2>
-          <p className="paragraph">
+          {/* <p className="paragraph">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt
             quisquam officia maxime voluptatem ipsa tempora expedita soluta
             cumque placeat. Temporibus impedit vero, eos consequuntur voluptas
             esse expedita ducimus quia aliquid.
-          </p>
+          </p> */}
 
-          <div className="flex flex-wrap justify-center">
+          <div className="pt-20 flex flex-wrap justify-center">
             <article className="relative w-[250] m-5 group">
               <figure>
                 <Image

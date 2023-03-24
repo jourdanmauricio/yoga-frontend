@@ -142,10 +142,10 @@ a {
     @apply list-none p-0 m-0 hidden sm:flex items-center h-[50px] ml-3;
   }
   .menu__link {
-    @apply ml-2 no-underline text-buttonColor border-b border-solid hover:border-buttonColor;
+    @apply ml-2 no-underline text-buttonColor;
   }
   .menu__item {
-    @apply block px-2 py-1;
+    @apply relative block px-2 py-1 after:bg-buttonColor;
   }
   .menu__mobile {
     @apply absolute top-[45px] left-0 w-[50%] bg-slate-200 -z-10;
@@ -159,4 +159,25 @@ a {
   .menu__mobile-item {
     @apply no-underline text-black font-normal px-6 py-6 block;
   }
+}
+
+/**********************/
+/***   ANIMATIONS   ***/
+/**********************/
+.anim__bottom::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  width: 0%;
+  height: 1px;
+  transition: width 0.5s ease, left 0.5s ease, right 0.5s ease;
+}
+.anim__bottom:hover::after {
+  width: 100%;
+}
+.to__center::after {
+  left: 50%;
+}
+.to__center:hover::after {
+  left: 0;
 }

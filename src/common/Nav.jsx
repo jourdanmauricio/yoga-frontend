@@ -35,44 +35,60 @@ const Nav = () => {
           <li
             className={`menu__link ${
               router.asPath == '/#inicio'
-                ? 'border-buttonColor'
-                : 'border-slate-200'
+                ? 'border-b border-solid border-buttonColor'
+                : ''
             }`}
           >
-            <Link className="menu__item" href="#inicio" scroll={false}>
+            <Link
+              className="menu__item anim__bottom to__center"
+              href="#inicio"
+              scroll={false}
+            >
               Inicio
             </Link>
           </li>
           <li
-            className={`menu__link ${
+            className={`menu__link group ${
               router.asPath == '/#servicios'
-                ? 'border-buttonColor'
-                : 'border-slate-200'
+                ? 'border-b border-solid border-buttonColor'
+                : ''
             }`}
           >
-            <Link className="menu__item" href="#servicios" scroll={false}>
+            <Link
+              className="menu__item anim__bottom to__center"
+              href="#servicios"
+              scroll={false}
+            >
               Servicios
             </Link>
           </li>
           <li
-            className={`menu__link ${
+            className={`menu__link group ${
               router.asPath == '/#lessons'
-                ? 'border-buttonColor'
-                : 'border-slate-200'
+                ? 'border-b border-solid border-buttonColor'
+                : ''
             }`}
           >
-            <Link className="menu__item" href="#lessons" scroll={false}>
+            <Link
+              className="menu__item anim__bottom to__center"
+              href="#lessons"
+              scroll={false}
+            >
               Horarios
             </Link>
           </li>
           <li
-            className={`menu__link ${
+            className={`menu__link group ${
               router.asPath == '/#contact'
                 ? 'border-buttonColor'
                 : 'border-slate-200'
             }`}
           >
-            <Link className="menu__item" href="#contact" scroll={false}>
+            <Link
+              className="menu__item anim__bottom to__center"
+              href="#contact"
+              scroll={false}
+            >
               Contacto
             </Link>
           </li>
