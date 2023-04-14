@@ -108,8 +108,7 @@ const Services = () => {
                 espiritual del hombre. Nació en la India hace Miles de años . No
                 es una religión , ni un credo confesional y no tiene templos,
                 ceremonias ni dogmas. Constituye un método integral de
-                evolución, que empieza con el perfeccionamiento del cuerpo
-                humano y prosigue con el progreso espiritual.
+                evolución.
               </p>
             </figcaption>
           </figure>
@@ -128,10 +127,10 @@ const Services = () => {
               <p className="paragraph">
                 El Hatha Yoga juega un destacado papel tanto en el campo de la
                 salud corporal cómo mental. Mediante las asanas, las técnicas de
-                estiramiento, de control de la respiración y de relajación, se
-                pueden prevenir y/o calmar enfermedades respiratorias,
-                circulatorias y diversos desórdenes psicofisicos. El
-                ansiolíticos y sus técnicas sedan el sistema nervioso autónomo.
+                control de la respiración y de relajación, se pueden prevenir
+                y/o calmar enfermedades respiratorias, circulatorias y diversos
+                desórdenes psicofisicos. Es ansiolítico y sus técnicas sedan el
+                sistema nervioso autónomo.
               </p>
             </figcaption>
           </figure>
@@ -180,7 +179,7 @@ const Services = () => {
 
           <h2 className="title">Hatha Yoga</h2>
           <p className="paragraph w-full">
-            El yoga psicofisicos (Hatha Yoga) es el sistema más perfecto de
+            El yoga psicofisico (Hatha Yoga) es el sistema más perfecto de
             acción armonizante sobre el cuerpo, sus funciones y energías.
             Dispone de un gran número de técnicas de purificación física y
             energética, donde juega un papel muy importante la atención
