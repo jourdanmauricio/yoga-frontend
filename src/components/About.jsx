@@ -22,7 +22,7 @@ const About = () => {
         <Link
           href="/#lessons"
           scroll={false}
-          className="inline-block mt-10 text-lg text-buttonColor border-b border-buttonColor ease-in-out duration-500 hover:tracking-widest hover:border-b"
+          className="inline-block mt-10 text-lg text-buttonColor border-b border-buttonColor ease-in-out duration-500 hover:tracking-widest hover:border-b font-raleway"
         >
           Descubre mis clases
         </Link>

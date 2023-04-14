@@ -6,7 +6,7 @@ const Footer = ({ contact, socialMedia }) => {
   const { action, error, formMsg, handleChange, handleSubmit } = useFooter();
 
   return (
-    <footer className="py-10 px-5 lg:px-20 bg-backgroundFooterColor">
+    <footer className="py-10 px-5 lg:px-20 bg-backgroundFooterColor font-raleway">
       <section className="w-full flex flex-col p-10 sm:flex-row sm:justify-evenly sm:gap-0 sm:h-[400px]">
         <div className="w-full flex justify-center items-center text-center sm:w-1/2">
           {action === 'form' && (
@@ -16,7 +16,7 @@ const Footer = ({ contact, socialMedia }) => {
               noValidate
               onSubmit={handleSubmit}
             >
-              <p className="paragraph text-gray-800">
+              <p className="paragraph text-gray-800 font-raleway">
                 Suscribite al newsletter y recibe nuestras novedades
               </p>
 

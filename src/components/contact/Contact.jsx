@@ -31,9 +31,9 @@ const Contact = () => {
                   onSubmit={handleSubmit}
                   noValidate
                 >
+                  <label htmlFor="name-contact">Nombre</label>
                   <div className="form__group">
                     <span className="form__icon">*</span>
-
                     <input
                       type="text"
                       className={`form__input ${
@@ -59,6 +59,7 @@ const Contact = () => {
                     </span>
                   </div>
 
+                  <label htmlFor="email-contact">Email</label>
                   <div className="form__group">
                     <span className="form__icon">*</span>
                     <input
@@ -86,6 +87,7 @@ const Contact = () => {
                     </span>
                   </div>
 
+                  <label htmlFor="phone-contact">Teléfono</label>
                   <div className="form__group">
                     <input
                       type="text"
@@ -111,6 +113,7 @@ const Contact = () => {
                     </span>
                   </div>
 
+                  <label htmlFor="comments-contact">Comentario</label>
                   <div className="form__group">
                     <span className="form__icon">*</span>
                     <textarea
@@ -139,7 +142,7 @@ const Contact = () => {
                   </div>
 
                   <button
-                    className="button__cta mt-8 mb-0 w-[150px] lg:w-[280px]"
+                    className="button__cta mt-8 mb-0 w-[150px] lg:w-[280px] font-raleway"
                     // value="Enviar"
                     type="submit"
                   >

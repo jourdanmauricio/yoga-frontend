@@ -17,14 +17,14 @@ body {
   max-width: 1400px;
   margin: auto;
   scroll-behavior: smooth;
-  font-family: var(--raleway-font);
+  font-family: var(--secondary-font);
   background-color: var(--background-color);
 }
 
 h1,
 h2,
 h3 {
-  font-family: var(--quicksand-font);
+  font-family: var(--primary-font);
 }
 
 a {
@@ -119,7 +119,7 @@ a {
     @apply absolute left-[5px] text-red-700;
   }
   .form__error {
-    @apply absolute text-left w-11/12 rounded text-sm text-errorColor block transition-opacity duration-1000 ease-in-out;
+    @apply absolute text-left w-11/12 rounded text-xs text-errorColor block transition-opacity duration-1000 ease-in-out font-raleway;
   }
 
   .form__input {

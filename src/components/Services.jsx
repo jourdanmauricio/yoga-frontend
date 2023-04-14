@@ -74,7 +74,11 @@ const Services = () => {
             </article>
           </div>
 
-          <Link href="/#contact" className="button__cta" scroll={false}>
+          <Link
+            href="/#contact"
+            className="button__cta font-raleway"
+            scroll={false}
+          >
             Más información
           </Link>
         </div>
@@ -89,7 +93,9 @@ const Services = () => {
               es quién eres cuando llegas allí.
             </p>
           </blockquote>
-          <figcaption className="pl-10 text-left">&mdash; Max Strom</figcaption>
+          <figcaption className="pl-10 text-left font-raleway">
+            &mdash; Max Strom
+          </figcaption>
         </div>
       </figure>
       <article className="py-10 px-5 lg:px-20 mb-20 flex flex-col sm:flex-row items-center justify-center text-center gap-10">

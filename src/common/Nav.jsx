@@ -19,7 +19,7 @@ const Nav = () => {
   }, []);
 
   return (
-    <nav className="menu">
+    <nav className="menu font-raleway">
       <Image
         ref={btnMenuRef}
         onClick={() => setIsOpenMenu((prev) => !prev)}

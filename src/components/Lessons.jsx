@@ -10,7 +10,7 @@ const Lessons = ({ lessons }) => {
       </p>
       <table
         id="lessons-table"
-        className="border-spacing-1 border-collapse bg-pink-500 rounded overflow-hidden max-w-[800px] w-full mx-auto relative shadow-[0_0_10px_rgba(0,0,0,0.25)]"
+        className="border-spacing-1 border-collapse bg-pink-500 rounded overflow-hidden max-w-[800px] w-full mx-auto relative shadow-[0_0_10px_rgba(0,0,0,0.25)] font-raleway"
       >
         <thead>
           <tr className="pl-2 h-14 bg-tableHeaderColor text-base text-tableHeaderTextColor border-b border-solid border-tableBorderColor">
