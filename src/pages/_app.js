@@ -6,7 +6,7 @@ import {
   Quicksand,
   Dancing_Script,
   Indie_Flower,
-} from '@next/font/google';
+} from 'next/font/google';
 
 const raleway = Raleway({ subsets: ['latin'] });
 const quicksand = Quicksand({ subsets: ['latin'] });
